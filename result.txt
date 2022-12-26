@@ -1,0 +1,249 @@
+Discription:
+[P] - parallel calculating.
+[NP] -not parallel calculating.
+
+Test 1: Same size, different thread count.
+Test 1.0:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 1
+[NP]: time -> 4608ms
+[P]: time -> 4874ms
+
+
+Test 1.1:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 2
+[NP]: time -> 4687ms
+[P]: time -> 2548ms
+
+
+Test 1.2:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 3
+[NP]: time -> 4701ms
+[P]: time -> 1751ms
+
+
+Test 1.3:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 4
+[NP]: time -> 4521ms
+[P]: time -> 1302ms
+
+
+Test 1.4:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 5
+[NP]: time -> 4731ms
+[P]: time -> 1076ms
+
+
+Test 1.5:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 6
+[NP]: time -> 4675ms
+[P]: time -> 871ms
+
+
+Test 1.6:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 7
+[NP]: time -> 4523ms
+[P]: time -> 1089ms
+
+
+Test 1.7:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 8
+[NP]: time -> 4846ms
+[P]: time -> 1019ms
+
+
+Test 1.8:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 9
+[NP]: time -> 4960ms
+[P]: time -> 934ms
+
+
+Test 1.9:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 10
+[NP]: time -> 4634ms
+[P]: time -> 854ms
+
+
+Test 1.10:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 11
+[NP]: time -> 4789ms
+[P]: time -> 828ms
+
+
+Test 1.11:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 12
+[NP]: time -> 4935ms
+[P]: time -> 887ms
+
+
+Test 2: Same thread number [2], different size.
+Test 2.0:
+Programm arguments: --matrix 1 2 --matrix 2 1 --threads 2
+[NP]: time -> 0ms
+[P]: time -> 0ms
+
+
+Test 2.1:
+Programm arguments: --matrix 2 5 --matrix 5 2 --threads 2
+[NP]: time -> 0ms
+[P]: time -> 0ms
+
+
+Test 2.2:
+Programm arguments: --matrix 10 5 --matrix 5 10 --threads 2
+[NP]: time -> 0ms
+[P]: time -> 0ms
+
+
+Test 2.3:
+Programm arguments: --matrix 10 10 --matrix 10 10 --threads 2
+[NP]: time -> 0ms
+[P]: time -> 0ms
+
+
+Test 2.4:
+Programm arguments: --matrix 10 500 --matrix 500 10 --threads 2
+[NP]: time -> 0ms
+[P]: time -> 0ms
+
+
+Test 2.5:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 2
+[NP]: time -> 4681ms
+[P]: time -> 2592ms
+
+
+Test 2.6:
+Programm arguments: --matrix 200 500 --matrix 500 200 --threads 2
+[NP]: time -> 93ms
+[P]: time -> 48ms
+
+
+Test 2.7:
+Programm arguments: --matrix 190 50 --matrix 50 190 --threads 2
+[NP]: time -> 8ms
+[P]: time -> 6ms
+
+
+Test 2.8:
+Programm arguments: --matrix 10000  5 --matrix 5 10000 --threads 2
+[NP]: time -> 3011ms
+[P]: time -> 1514ms
+
+
+Test 2.9:
+Programm arguments: --matrix 1000 1000 --matrix 1000 1000 --threads 2
+[NP]: time -> 5004ms
+[P]: time -> 2773ms
+
+
+Test 2.10:
+Programm arguments: --matrix 5 5000 --matrix 5000 5 --threads 2
+[NP]: time -> 0ms
+[P]: time -> 0ms
+
+
+Test 2.11:
+Programm arguments: --matrix 1500 500 --matrix 500 1500 --threads 2
+[NP]: time -> 5353ms
+[P]: time -> 3097ms
+
+
+Test 3: Different size, different thread number.
+Test 3.0:
+Programm arguments: --matrix 1 2 --matrix 2 1 --threads 1
+[NP]: time -> 0ms
+[P]: time -> 0ms
+
+
+Test 3.1:
+Programm arguments: --matrix 2 5 --matrix 5 2 --threads 2
+[NP]: time -> 0ms
+[P]: time -> 0ms
+
+
+Test 3.2:
+Programm arguments: --matrix 10 5 --matrix 5 10 --threads 3
+[NP]: time -> 0ms
+[P]: time -> 0ms
+
+
+Test 3.3:
+Programm arguments: --matrix 10 10 --matrix 10 10 --threads 4
+[NP]: time -> 0ms
+[P]: time -> 0ms
+
+
+Test 3.4:
+Programm arguments: --matrix 10 500 --matrix 500 10 --threads 5
+[NP]: time -> 0ms
+[P]: time -> 0ms
+
+
+Test 3.5:
+Programm arguments: --matrix 1000 500 --matrix 500 2000 --threads 6
+[NP]: time -> 4555ms
+[P]: time -> 900ms
+
+
+Test 3.6:
+Programm arguments: --matrix 200 500 --matrix 500 200 --threads 7
+[NP]: time -> 90ms
+[P]: time -> 25ms
+
+
+Test 3.7:
+Programm arguments: --matrix 190 50 --matrix 50 190 --threads 8
+[NP]: time -> 9ms
+[P]: time -> 2ms
+
+
+Test 3.8:
+Programm arguments: --matrix 10000  5 --matrix 5 10000 --threads 9
+[NP]: time -> 2953ms
+[P]: time -> 575ms
+
+
+Test 3.9:
+Programm arguments: --matrix 1000 1000 --matrix 1000 1000 --threads 10
+[NP]: time -> 4621ms
+[P]: time -> 854ms
+
+
+Test 3.10:
+Programm arguments: --matrix 5 5000 --matrix 5000 5 --threads 11
+[NP]: time -> 0ms
+[P]: time -> 1ms
+
+
+Test 3.11:
+Programm arguments: --matrix 1500 500 --matrix 500 1500 --threads 12
+[NP]: time -> 5380ms
+[P]: time -> 895ms
+
+
+Test 4: A little size, min/maximum thread number.
+Test 4.0:
+Programm arguments: --matrix 1 2 --matrix 2 1 --threads 1
+[NP]: time -> 0ms
+[P]: time -> 0ms
+
+
+Test 4.1:
+Programm arguments: --matrix 1 2 --matrix 2 1 --threads 12
+[NP]: time -> 0ms
+[P]: time -> 0ms
+
+
+Test 5: A large size, min/maximum thread number.
+Test 5.0:
+Programm arguments: --matrix 1000 200 --matrix 200 1000 --threads 1
+[NP]: time -> 987ms
+[P]: time -> 1173ms
+
+
+Test 5.1:
+Programm arguments: --matrix 1000 200 --matrix 200 1000 --threads 12
+[NP]: time -> 964ms
+[P]: time -> 157ms
+
+

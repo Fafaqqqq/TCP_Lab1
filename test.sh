@@ -66,37 +66,42 @@ echo "[P] - parallel calculating." >> $RESULT
 echo "[NP] -not parallel calculating." >> $RESULT
 echo >> $RESULT
 
-echo "TEST1" >> $RESULT
+echo "Test 1: Same size, different thread count." >> $RESULT
 for i in ${!TEST1[@]}; do
-  echo "Test $i:" >> $RESULT
+  echo "Test 1.$i:" >> $RESULT
+  echo "Programm arguments: ${TEST1[$i]}" >> $RESULT
   ./example/bin/lab1 ${TEST1[$i]} >> $RESULT
   echo >> $RESULT
 done
 
-echo "TEST2" >> $RESULT
+echo "Test 2: Same thread number [2], different size." >> $RESULT
 for i in ${!TEST2[@]}; do
-  echo "Test $i:" >> $RESULT
+  echo "Test 2.$i:" >> $RESULT
+  echo "Programm arguments: ${TEST2[$i]}" >> $RESULT
   ./example/bin/lab1 ${TEST2[$i]} >> $RESULT
   echo >> $RESULT
 done
 
-echo "TEST3" >> $RESULT
+echo "Test 3: Different size, different thread number." >> $RESULT
 for i in ${!TEST3[@]}; do
-  echo "Test $i:" >> $RESULT
+  echo "Test 3.$i:" >> $RESULT
+  echo "Programm arguments: ${TEST3[$i]}" >> $RESULT
   ./example/bin/lab1 ${TEST3[$i]} >> $RESULT
   echo >> $RESULT
 done
 
-echo "TEST4" >> $RESULT
+echo "Test 4: A little size, min/maximum thread number." >> $RESULT
 for i in ${!TEST4[@]}; do
-  echo "Test $i:" >> $RESULT
+  echo "Test 4.$i:" >> $RESULT
+  echo "Programm arguments: ${TEST4[$i]}" >> $RESULT
   ./example/bin/lab1 ${TEST4[$i]} >> $RESULT
   echo >> $RESULT
 done
 
-echo "TEST5" >> $RESULT
+echo "Test 5: A large size, min/maximum thread number." >> $RESULT
 for i in ${!TEST5[@]}; do
-  echo "Test $i:" >> $RESULT
+  echo "Test 5.$i:" >> $RESULT
+  echo "Programm arguments: ${TEST5[$i]}" >> $RESULT
   ./example/bin/lab1 ${TEST5[$i]} >> $RESULT
   echo >> $RESULT
 done
